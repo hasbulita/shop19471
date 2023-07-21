@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>О гитарах</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/its-slider.css">
+<link rel="stylesheet" href="css/accordion.css">
+
+</head>
+<body>
+<header> 
+  
+<img src="img/logo.svg" alt="">
+ <nav class="nav_list">
+<ul class="list">
+    <li class="list_item">
+        для начинающих 
+    </li>
+    <li class="list_item"><a href="index.html" class="nav__link">главная</a></li>
+    <li class="list_item">
+        професиональные 
+    </li>
+</ul>
+</nav>
+<!-- <button class="btn-theme">смена темы</button> -->
+<div class="switch">
+  <input type="checkbox" id="toggle" class="switch_inp">
+  <label for="toggle" class="switch_lab"></label>
+</div>
+<button class="burger-btn" id="btn-menu">
+<img src="img/Vector.svg" alt="" class="burger_img">
+</button>
+<div class="burger_menu" id="menu">
+<ul class="burger_list">
+    <li class="burger_item">акции</li>
+    <li class="burger_item">уроки</li>
+    <li class="burger_item">новинки</li>
+    <li class="burger_item">скидки</li>
+    <li class="burger_item">спонсоры</li>
+    
+  </ul>
+</div>
+
+<div class="burger" onclick="burgerClick()">
+    <div class="burger__line burger__line_1"></div>
+    <div class="burger__line burger__line_2"></div>
+    <div class="burger__line burger__line_3"></div>
+</div>
+
+</header>
+
+<main class="main">
+  
+
+<section class="hero_block">
+  <div class="container container_hero-block">
+    <div class="hero-block_content">
+      <div class="container container_clock">
+        <div id="time" class="time"></div>
+      </div>
+    <h2 class="hero-block_tittle">О гитарах <h2>
+    <h1 class="about_text1">Гитары разных моделей и по доступной цене</h1>
+    <h1 class="about_text2">Удобство и качество, выбор на любой вкус</h1>
+    <div>
+      <p class="buy_text">5 339 руб</p>
+      <button class="buy_btn" id="btn" onclick="buy()">buy</button>
+    </div>
+    </section>
+</div>
+
+<img src="img/screen.svg" alt="" class="hero-block_img">
+</div>
+<section class="second">
+    <h1 class="second_tittle"> 
+        НАШИ ТОВАРЫ
+    </h1>
+    <div class="itc-slider" data-slider="itc-slider">
+        <div class="itc-slider-wrapper">
+          <div class="itc-slider-items">
+            <div class="itc-slider-item">
+                <div class="card">
+                    <img src="img/about.png" alt="" class="card_image">
+                    
+                 </div>
+            </div>
+            <div class="itc-slider-item">
+                <div class="card">
+                    <img src="img/about.png" alt="" class="card_image">
+                    
+                 </div>
+            </div>
+            <div class="itc-slider-item">
+                <div class="card">
+                    <img src="img/about.png" alt="" class="card_image">
+                  
+                  </div>
+            </div>
+          </div>
+        </div>
+        <button class="itc-slider-btn itc-slider-btn-prev"></button>
+        <button class="itc-slider-btn itc-slider-btn-next"></button>
+      </div>
+</section>
+<section class="map_contacts">
+
+<div class="map_image">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5145c186e246c01e7ba7ab81a327fbbbf09af3d102b00f9af1b55fa0481bfccf&amp;source=constructor" class="map" frameborder="0"></iframe>
+</div>
+</section>
+<section class="video">
+  <video  id="myVideo" autoplay muted loop>
+    <source src="video/music1.mp4" type="video/mp4">
+  </video>
+  <div class="video__content">
+    <div class="container">
+      <h1 class="video__tittle">kakoito chel</h1>
+      <p class="video__text">music</p>
+      <button class="video__btn" id="play" onclick="play()">pause</button>
+      <button class="video__btn" id="mute" onclick="mute()">Unmute</button>
+      <button class="video__btn" onclick="prev()">prev</button>
+      <button class="video__btn" onclick="next()">next</button>
+
+    </div>
+  </div>
+</section>
+<section class="accordion">
+  <div class="container">
+    <div class="accordion" id="accordion-1">
+        <div class="accordion__item accordion__item_show">
+          <div class="accordion__header">
+            Акустическая гитары
+          </div>
+          <div class="accordion__body">
+            Акустическая гитара — струнный музыкальный инструмент. Относится к группе щипковых инструментов. Звук из извлекается щипком или ударом пальцев по струнам.
+          </div>
+        </div>
+        <div class="accordion__item">
+          <div class="accordion__header">
+            электрогитара
+          </div>
+          <div class="accordion__body">
+            Электрогита́ра — струнный щипковый электрический музыкальный инструмент, разновидность гитары, имеющая электромагнитные звукосниматели, преобразующие колебания металлических струн в колебания электрического тока.
+          </div>
+        </div>
+        
+      </div>
+    </div>
+</section>
+<button class="basket" id="basket">
+  <img src="img/img.png" alt="" class="basket__img">
+  <p class="price">0</p>
+</button>
+</main>
+<script src="scripts/its-slider.js"></script> 
+<script src="scripts/main.js"></script>
+<script src="scripts/accordion.js"></script>
+<script src="scripts/theme.js"></script>
+<script src="scripts/burger.js"></script>
+<script src="scripts/time.js"></script>
+<script src="scripts/video-player.js"></script>
+</body>
+</html>
